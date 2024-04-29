@@ -1,5 +1,32 @@
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Author mBulgakov = new Author("Михаил", "Булгаков");
+        System.out.println("mBulgakov.getFirstName() = " + mBulgakov.getFirstName());
+        System.out.println("mBulgakov.getLastName() = " + mBulgakov.getLastName());
+
+        Book masterAndMargarita = new Book("Мастер и Маргарита", "Михаил Булгаков", 1966);
+        System.out.println("masterAndMargarita.name = " + masterAndMargarita.getName());
+        System.out.println("masterAndMargarita.author = " + masterAndMargarita.getAuthor());
+        System.out.println("masterAndMargarita.year = " + masterAndMargarita.getYear());
+
+        Author aPushkin = new Author("Александр", "Пушкин");
+        System.out.println("aPushkin.getFirstName() = " + aPushkin.getFirstName());
+        System.out.println("aPushkin.getLastName() = " + aPushkin.getLastName());
+
+        Book fairyTales = new Book("Сказки", "Александр Пушкин", 2023);
+        System.out.println("fairyTales.name = " + fairyTales.getName());
+        System.out.println("fairyTales.author = " + fairyTales.getAuthor());
+        System.out.println("fairyTales.year = " + fairyTales.getYear());
+
+        fairyTales.setYear(2022);
+        System.out.println("fairyTales.getYear() = " + fairyTales.getYear());
+
+//Person sarah = new Person("Sarah", 30);
+//        System.out.println("sarah.name = " + sarah.getName());
+//        System.out.println("sarah.age = " + sarah.getAge());
+//        sarah.setAge(31);
+//        System.out.println("sarah.getAge() = " + sarah.getAge());
+//        Person john = new Person("John", 13);
     }
 }
