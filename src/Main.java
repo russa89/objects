@@ -23,6 +23,8 @@ public class Main {
 
         fairyTales.setYear(2022);
         System.out.println("fairyTales.getYear() = " + fairyTales.getYear());
+        System.out.println(masterAndMargarita);
+        System.out.println(fairyTales);
 
 
     }
